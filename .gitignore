@@ -1,0 +1,11 @@
+# Originales de las imágenes: se guardan en local, no se publican
+laminas/img/originales/
+inventarios/originales/*
+!inventarios/originales/.gitkeep
+# Imágenes con derechos pendientes o de terceros: solo enlace a la ficha oficial
+laminas/img/lamina_02_cano.jpg
+laminas/img/lamina_05_rufina.jpg
+laminas/img/lamina_06_abanico.jpg
+laminas/img/lamina_07_resurreccion.jpg
+laminas/img/lamina_08_giordano.jpg
+laminas/img/lamina_09_cano_nino.jpg
