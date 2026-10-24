@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Siete inventarios, 1805-1937</title>
+<meta name="description" content="Cómo seguimos la pinacoteca de Sebastián Martínez a través de los testamentos y particiones de sus herederos, 1805-1937.">
+<style>
+:root{--bg:#F6F3EC;--ink:#1E2329;--muted:#4A5560;--accent:#0B769F;--orange:#eb6834;--line:#d9d3c6;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191E;--ink:#F3EFE6;--muted:#B9C2CB;--accent:#7CC3DE;--orange:#f08a5d;--line:#3A424B;--card:#1d2329}}
+:root[data-theme="dark"]{--bg:#15191E;--ink:#F3EFE6;--muted:#B9C2CB;--accent:#7CC3DE;--orange:#f08a5d;--line:#3A424B;--card:#1d2329}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+.deck{height:100%;overflow:hidden;position:relative}
+.slide{position:absolute;inset:0;display:none;padding:clamp(20px,5vw,72px) clamp(16px,6vw,96px) 84px;overflow-y:auto}
+.slide.on{display:block}
+.eyebrow{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
+h1{font-weight:400;font-size:clamp(34px,6vw,72px);line-height:1.05;margin:0 0 20px}
+h2{font-weight:400;font-size:clamp(26px,4vw,48px);line-height:1.1;margin:0 0 18px}
+p,li{font-size:clamp(16px,1.6vw,21px);line-height:1.5;color:var(--ink)}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,4vw,56px);align-items:start}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.fig{background:var(--card);border:1px solid var(--line);padding:10px}
+.fig img{width:100%;height:auto;display:block}
+.ph{border:1px dashed var(--muted);min-height:260px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);font-family:Arial,sans-serif;font-size:14px;line-height:1.5}
+.cap{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin-top:8px}
+.facts{border-top:2px solid var(--accent);margin-top:18px;padding-top:12px}
+.facts div{display:flex;gap:14px;padding:6px 0;border-bottom:1px solid var(--line);font-size:clamp(15px,1.4vw,19px)}
+.facts b{color:var(--accent);font-weight:400;min-width:7.5em}
+.big{font-size:clamp(48px,9vw,120px);color:var(--accent);line-height:1;margin:8px 0}
+.row{display:flex;flex-wrap:wrap;gap:clamp(16px,4vw,56px);margin:18px 0}
+.row>div{flex:1 1 180px}
+table{border-collapse:collapse;width:100%;font-family:Arial,sans-serif;font-size:14px}
+th{background:#0B769F;color:#fff;font-weight:600;text-align:left;padding:8px}
+td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.tl{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tl a{flex:1 1 110px;border-top:4px solid var(--accent);padding:10px 4px;text-decoration:none;color:var(--ink);font-family:Arial,sans-serif}
+.tl a span{display:block;font-family:Georgia,serif;font-size:28px;color:var(--accent)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:var(--bg);border-top:1px solid var(--line);font-family:Arial,sans-serif;font-size:13px;color:var(--muted);z-index:2}
+nav button{background:none;border:1px solid var(--line);color:var(--ink);padding:8px 14px;font-size:15px;cursor:pointer;border-radius:3px}
+nav a{color:var(--accent)}
+.note{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin-top:24px}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide">
+  <p class="eyebrow">De Cádiz a Nueva York · Materiales</p>
+  <h1>Siete inventarios.<br>Una pinacoteca, <span style="white-space:nowrap">1805-1937</span></h1>
+  <p class="muted">Cómo seguimos los cuadros de Sebastián Martínez a través de los testamentos, particiones y actas de sus herederos.</p>
+  <p class="muted">Lesley Crewdson y José Juan Ruiz · Universidad de Cádiz y Archivo Histórico de Protocolos de Cádiz · 18 de noviembre de 2026</p>
+  <div class="tl">
+    <a href="#2"><span>1805</span>Partición</a>
+    <a href="#3"><span>1828</span>Casado</a>
+    <a href="#4"><span>1844</span>Academia</a>
+    <a href="#5"><span>1867</span>Drouot</a>
+    <a href="#6"><span>1888</span>García-Luz</a>
+    <a href="#7"><span>1937</span>Tarancón</a>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">El problema</p>
+  <h2>Ciento treinta años sin una sola fotografía</h2>
+  <div class="grid">
+    <div>
+      <p>Entre la partición de 1805 y el acta de Tarancón de 1937 la colección se describe siete veces, por escribanos, tasadores, académicos, subastadores y miembros de una junta en plena guerra. Ninguno vio el inventario anterior.</p>
+      <p>Las descripciones son escuetas («un santo», «un retrato»), las atribuciones cambian, las medidas se dan en varas, tercias o metros y las tasaciones en reales, francos o pesetas.</p>
+    </div>
+    <div>
+      <p><b>Cómo los encadenamos</b></p>
+      <ul>
+        <li>Clasificación iconográfica de cada asiento, con tres niveles de precisión.</li>
+        <li>Puntuación de cada pareja por tema, autor, medidas y precio relativo.</li>
+        <li>Asignación óptima de parejas entre dos inventarios (método húngaro).</li>
+        <li>Grado de confianza (alta, media, baja o improbable), contrastado con permutaciones al azar.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" id="s1805">
+  <p class="eyebrow">1805 · Cádiz</p>
+  <h2>La partición: dos hijuelas</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1805.jpg" alt="Partición de los bienes de Sebastián Martínez, 1805" data-ph="Facsímil de la partición de 1805 (AHPNC)"><p class="cap">Particiones de los bienes de Sebastián Martínez. Archivo Histórico de Protocolos de Cádiz.</p></div>
+    <div>
+      <p>Cinco años después de la muerte de Sebastián, sus dos hijas se reparten la pinacoteca en lotes de valor equivalente. Josefa, casada con Fernando Casado de Torres, y Catalina, casada con Francisco Viola.</p>
+      <div class="facts">
+        <div><b>Tamaño</b>591 asientos</div>
+        <div><b>Valor</b>295.420 reales</div>
+        <div><b>Permite ver</b>Qué recibió cada hija</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">1828 · Madrid</p>
+  <h2>El inventario de Fernando Casado</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1828.jpg" alt="Inventario de la pinacoteca de Fernando Casado, 1828" data-ph="Facsímil del inventario de Casado (BNE, Mss. 18630/40 [?])"><p class="cap">Inventario de la pinacoteca de Fernando Casado de Torres.</p></div>
+    <div>
+      <p>El marino e ingeniero recompone la colección. Recupera buena parte de lo que había recibido Catalina y la amplía hasta casi mil obras.</p>
+      <div class="facts">
+        <div><b>Tamaño</b>956 obras</div>
+        <div><b>Valor</b>c. 1.048.000 reales</div>
+        <div><b>Permite ver</b>Qué volvió a la familia y qué se añadió</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">1844-1849 · Madrid</p>
+  <h2>El avalúo de la Academia y las ofertas a Isabel II</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1844.jpg" alt="Avalúo de la colección, 1844" data-ph="Facsímil del avalúo de 1844 (por localizar el original: RABASF / Palacio)"><p class="cap">Avalúo de la colección de Celestino García Luz.</p></div>
+    <div>
+      <p>Celestino García Luz, yerno de Casado, ofrece la colección a la Corona en 1844, 1847 y 1849. La Academia de San Fernando la tasa. La reina no compra.</p>
+      <div class="facts">
+        <div><b>Tamaño</b>658 obras</div>
+        <div><b>Valor</b>1.404.080 reales</div>
+        <div><b>Permite ver</b>El juicio de los expertos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">27 de junio de 1867 · París</p>
+  <h2>La venta del conde del Retamoso en el Hôtel Drouot</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1867.jpg" alt="Catálogo de la venta en el Hôtel Drouot, 1867" data-ph="Portada del catálogo de Drouot, 1867"><p class="cap">Catálogo de la venta, Hôtel Drouot, París.</p></div>
+    <div>
+      <p>El mismo año en que el marqués de Salamanca vende su galería en París, los herederos lo intentan con 51 lotes. El resultado es pobre.</p>
+      <div class="facts">
+        <div><b>Tamaño</b>51 lotes, 19 de ellos Murillos</div>
+        <div><b>Permite ver</b>El intento de vender en París</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">1885-1888 · Madrid</p>
+  <h2>La partición de Josefa García-Luz</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1888.jpg" alt="Testamentaría de Josefa García-Luz" data-ph="Facsímil de la testamentaría (AHPM, t. 28102)"><p class="cap">Testamentaría de Josefa García-Luz Casado. Archivo Histórico de Protocolos de Madrid, t. 28102.</p></div>
+    <div>
+      <p>Muere Josefa en 1885 y la partición se cierra en 1888. Es el inventario que deja ver lo que no se vendió en París, y en él aparece el Goya de Sebastián, tasado en 375 pesetas.</p>
+      <div class="facts">
+        <div><b>Tamaño</b>261 asientos</div>
+        <div><b>Valor</b>c. 160.000 pesetas</div>
+        <div><b>Permite ver</b>Lo que no se vendió en París</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">13 de mayo de 1937 · Tarancón</p>
+  <h2>El acta de la Junta de Incautación</h2>
+  <div class="grid">
+    <div class="fig"><img src="img/1937.jpg" alt="Acta de incautación, Tarancón, 1937" data-ph="Facsímil de las actas de la Junta Delegada de Cuenca"><p class="cap">Actas 1 a 4 de la Junta Delegada de Cuenca y acta del Parque de Automóviles, 13-V-1937.</p></div>
+    <div>
+      <p>Diez meses después del asesinato de la condesa viuda del Retamoso, la Junta registra lo que queda en el palacio de Tarancón. Entre los cuadros, el retrato de Sebastián por Inza, «rasgado en el centro».</p>
+      <div class="facts">
+        <div><b>Tamaño</b>39 cuadros: 20 religiosos y 19 retratos</div>
+        <div><b>Permite ver</b>Lo que quedaba al final</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Las siete instantáneas</p>
+  <h2>Crecer, recomponerse, deshacerse</h2>
+  <div class="fig" style="max-width:860px"><img src="img/pinacoteca_cortes.png" alt="Tamaño de la pinacoteca en cada inventario, 1805-1937"><p class="cap">Obras o asientos inventariados. En 1805 y 1888 se cuentan asientos, y un asiento puede agrupar varios cuadros. El avalúo de 1844 cubre la colección de Celestino García Luz.</p></div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Resultado 1</p>
+  <h2>La leyenda de «los ingleses»</h2>
+  <p>Según la tradición familiar, Catalina vendió a los ingleses la mitad de su herencia. Los inventarios no lo sostienen.</p>
+  <div class="row">
+    <div><p class="big">0,84</p><p class="muted">de los lotes de Catalina sobreviven en 1828, comparados con los de Josefa</p></div>
+    <div><p class="big">0,67</p><p class="muted">del valor sobrevive. Las pérdidas se concentran en Cádiz y en los cuadros más caros</p></div>
+  </div>
+  <p>Hubo ventas selectivas de obras pequeñas y valiosas a oficiales británicos, no la mitad de la herencia. Lo mejor de la parte de Catalina lo recompraron Josefa y Fernando, empezando por el retrato de Goya.</p>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Resultado 2</p>
+  <h2>Meade compró poco, y no lo mejor</h2>
+  <div class="grid">
+    <div>
+      <p>De las 132 obras de los catálogos de Richard W. Meade (1831 y 1853), solo una procede con alta probabilidad de la hijuela de Catalina: un <i>San Pedro liberado de la cárcel</i> atribuido a Caravaggio, tasado en 150 reales en 1805.</p>
+      <p>Otras diez son posibles. El grueso de la colección de Meade no aparece en ninguna hijuela.</p>
+    </div>
+    <div class="facts">
+      <div><b>Catálogos</b>132 obras</div>
+      <div><b>Confianza alta</b>1</div>
+      <div><b>Confianza media</b>10</div>
+      <div><b>Fuente</b>Carrasco (2019) y cruce con las hijuelas</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Resultado 3</p>
+  <h2>París no compró</h2>
+  <p>Al menos 23 de los 51 lotes de Drouot, y 18 de los 19 Murillos, vuelven a aparecer en la partición de 1888.</p>
+  <div class="fig" style="max-width:860px"><img src="img/drouot_1867.png" alt="Lotes de la venta de Drouot que reaparecen en 1888"><p class="cap">Cruce del catálogo de Drouot (1867) con la partición de 1888.</p></div>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Los seis cuadros de la conferencia, y uno más</p>
+  <h2>Siete trayectorias</h2>
+  <div class="fig" style="max-width:960px"><img src="img/trayectorias.png" alt="Trayectorias de los siete cuadros, 1776-2026"><p class="cap">Azul: familia de Sebastián y herederos. Naranja: mercado y colecciones europeas. Verde: Estados Unidos y Argentina. Gris: sin datos.</p></div>
+  <p><a href="../laminas/">Ver las láminas</a></p>
+</section>
+
+<section class="slide">
+  <p class="eyebrow">Lo que todavía no sabemos</p>
+  <h2>Huecos en la serie</h2>
+  <ul>
+    <li>Las ofertas a Isabel II (1844, 1847, 1849) y la comisión de la Academia de San Fernando.</li>
+    <li>El acta de Drouot con los precios de adjudicación.</li>
+    <li>El destino de las 39 piezas de 1937 después de la guerra y su salida en Sotheby's.</li>
+    <li>El testamento e inventario post mortem de Fernando Casado.</li>
+  </ul>
+  <p class="note">Elaboración propia a partir de las transcripciones de los inventarios. Para estructurar los datos, cruzar los inventarios y preparar estas páginas se ha utilizado Claude (Anthropic), bajo la dirección de los autores. Las ideas centrales, la interpretación y las conclusiones son de los autores. [?] = a verificar.</p>
+  <p><a href="../">Volver al inicio</a></p>
+</section>
+
+</div>
+<nav>
+  <button id="prev" aria-label="Anterior">&larr;</button>
+  <span id="count"></span>
+  <button id="next" aria-label="Siguiente">&rarr;</button>
+</nav>
+<script>
+(function(){
+  var s=[].slice.call(document.querySelectorAll('.slide')),i=0;
+  document.querySelectorAll('img[data-ph]').forEach(function(im){
+    im.addEventListener('error',function(){var d=document.createElement('div');d.className='ph';d.textContent=im.getAttribute('data-ph');im.replaceWith(d);});
+  });
+  function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(x,k){x.classList.toggle('on',k===i)});
+    document.getElementById('count').textContent=(i+1)+' / '+s.length;
+    if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));s[i].scrollTop=0;}
+  function fromHash(){var n=parseInt(location.hash.slice(1),10);go(isNaN(n)?0:n-1)}
+  document.getElementById('prev').onclick=function(){go(i-1)};
+  document.getElementById('next').onclick=function(){go(i+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(i+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(i-1)});
+  var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));x0=null});
+  window.addEventListener('hashchange',fromHash);
+  document.querySelectorAll('.tl a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();go(parseInt(a.getAttribute('href').slice(1),10))})});
+  fromHash();
+})();
+</script>
+</body>
+</html>
