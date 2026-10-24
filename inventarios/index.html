@@ -40,6 +40,13 @@ td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
 nav{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:var(--bg);border-top:1px solid var(--line);font-family:Arial,sans-serif;font-size:13px;color:var(--muted);z-index:2}
 nav button{background:none;border:1px solid var(--line);color:var(--ink);padding:8px 14px;font-size:15px;cursor:pointer;border-radius:3px}
 nav a{color:var(--accent)}
+@media (max-width:760px){
+  html,body{height:auto}
+  .deck{height:auto;overflow:visible}
+  .slide{display:block;position:static;padding:28px 16px 36px;border-bottom:1px solid var(--line);overflow:visible}
+  nav{display:none}
+  .fig img{max-height:none}
+}
 .note{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin-top:24px}
 </style>
 </head>
@@ -251,14 +258,15 @@ nav a{color:var(--accent)}
   function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(x,k){x.classList.toggle('on',k===i)});
     document.getElementById('count').textContent=(i+1)+' / '+s.length;
     if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));s[i].scrollTop=0;}
-  function fromHash(){var n=parseInt(location.hash.slice(1),10);go(isNaN(n)?0:n-1)}
+  var movil=window.matchMedia('(max-width:760px)').matches;
+  function fromHash(){if(movil){var n=parseInt(location.hash.slice(1),10);if(!isNaN(n)&&s[n-1])s[n-1].scrollIntoView();return;}var n=parseInt(location.hash.slice(1),10);go(isNaN(n)?0:n-1)}
   document.getElementById('prev').onclick=function(){go(i-1)};
   document.getElementById('next').onclick=function(){go(i+1)};
   document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' ')go(i+1);if(e.key==='ArrowLeft'||e.key==='PageUp')go(i-1)});
   var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
   document.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));x0=null});
   window.addEventListener('hashchange',fromHash);
-  document.querySelectorAll('.tl a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();go(parseInt(a.getAttribute('href').slice(1),10))})});
+  document.querySelectorAll('.tl a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var n=parseInt(a.getAttribute('href').slice(1),10);if(movil){s[n].scrollIntoView({behavior:'smooth'});}else{go(n);}})});
   fromHash();
 })();
 </script>
