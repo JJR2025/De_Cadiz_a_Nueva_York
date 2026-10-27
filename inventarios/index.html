@@ -65,12 +65,20 @@ nav a{color:var(--accent)}
 .cuadro .img .ph{min-height:420px}
 .cuadro .museo{font-family:Arial,sans-serif;font-size:14px;color:var(--muted);margin:0 0 14px}
 .cuadro .gancho{font-size:clamp(19px,1.9vw,26px);font-style:italic;line-height:1.35;border-left:4px solid var(--orange);padding-left:16px;margin:0 0 18px}
-.viaje{list-style:none;padding:0;margin:0;border-top:2px solid var(--accent)}
+.viaje{clear:both;list-style:none;padding:0;margin:0;border-top:2px solid var(--accent)}
 .viaje li{display:flex;gap:14px;padding:6px 0;border-bottom:1px solid var(--line);font-size:clamp(14px,1.25vw,17px);line-height:1.35}
 .viaje li b{color:var(--accent);font-weight:400;min-width:5.6em;font-family:Georgia,serif}
 .cuadro .mas{font-family:Arial,sans-serif;font-size:13px;margin-top:12px}
 .cuadro .mas a{color:var(--accent)}
 @media (max-width:760px){.cuadro{grid-template-columns:1fr}.cuadro .img img{max-height:none}}
+.qrbox{background:#fff;border:1px solid var(--line);padding:12px;text-align:center;font-family:Arial,sans-serif;font-size:13px;color:#1E2329;max-width:230px}
+.qrbox img{width:100%;height:auto;display:block}
+.qrbox b{display:block;font-size:14px;margin:6px 0 2px;color:#0B769F}
+.portada{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:clamp(20px,4vw,56px);align-items:start}
+.cierre{display:grid;grid-template-columns:320px minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.cierre .qrbox{max-width:320px}.cierre li{font-size:clamp(15px,1.4vw,19px)}
+.creditos{font-family:Arial,sans-serif;font-size:13px;color:var(--muted);line-height:1.5}
+@media (max-width:760px){.portada,.cierre{grid-template-columns:1fr}}
 .note{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin-top:24px}
 </style>
 </head>
@@ -79,9 +87,10 @@ nav a{color:var(--accent)}
 
 <section class="slide">
   <p class="eyebrow">De Cádiz a Nueva York · Materiales</p>
-  <h1>Seis documentos, siete inventarios.<br>Una pinacoteca, <span style="white-space:nowrap">1805-1937</span></h1>
+  <div class="portada"><div><h1>Seis documentos, siete inventarios.<br>Una pinacoteca, <span style="white-space:nowrap">1805-1937</span></h1>
   <p class="muted">Cómo seguimos los cuadros de Sebastián Martínez a través de los testamentos, particiones y actas de sus herederos.</p>
   <p class="muted">Lesley Crewdson y José Juan Ruiz · Universidad de Cádiz y Archivo Histórico de Protocolos de Cádiz · 18 de noviembre de 2026</p>
+  </div><div class="qrbox"><img src="qr/QR_presentacion_solo.png" alt="Código QR para descargar la presentación"><b>Llévese la presentación</b>Apunte la cámara del móvil al código<br><a href="../presentacion.pdf">presentacion.pdf</a></div></div>
   <div class="tl">
     <a href="#2"><span>1805</span>Partición</a>
     <a href="#3"><span>1828</span>Casado</a>
@@ -258,7 +267,7 @@ nav a{color:var(--accent)}
   <p class="eyebrow">Lámina 1 · Lo cuenta Lesley</p>
   <h2>Goya, <i>Sebastián Martínez</i>, 1792</h2>
   <div class="cuadro"><div class="img"><img src="../laminas/img/lamina_01_goya.jpg" alt="Goya, Sebastián Martínez, 1792" data-ph="La imagen de este cuadro se proyecta en la conferencia; véase la ficha oficial en la página de láminas (lámina 1)."></div>
-  <div><p class="museo">The Metropolitan Museum of Art, Nueva York (06.289) · óleo sobre lienzo, c. 93 × 68 cm</p><p class="gancho">Firmado «D. Sebastián Martínez por su amigo Goya, 1792». El único de los seis que sale de España por cuenta de la familia.</p><ul class="viaje"><li><b>1792</b><span>Cádiz, casa de Sebastián</span></li><li><b>1805</b><span>Hijuela de Catalina, 750 rs</span></li><li><b>c. 1814</b><span>Lo recompran Josefa y Fernando Casado</span></li><li><b>1828</b><span>Inventario de Casado, 1.500 rs</span></li><li><b>1888</b><span>Partición de Josefa García-Luz, 375 ptas</span></li><li><b>?-1904</b><span>Logroño, la rama riojana</span></li><li><b>1904</b><span>Salcedo e hijo, Madrid, 14.000 ptas</span></li><li><b>1905</b><span>Knoedler, Londres</span></li><li><b>1906</b><span>Metropolitan Museum, 1.700 libras, Fondo Rogers</span></li></ul><p class="mas"><a href="#as-goya">Los asientos originales &darr;</a> · <a href="../laminas/#goya">Lámina 1 y ficha oficial &rarr;</a></p></div></div>
+  <div><div class="qrbox" style="float:right;width:150px;margin:0 0 10px 18px;font-size:11px"><img src="qr/QR_laminas_solo.png" alt="Código QR de las láminas"><b style="font-size:12px">Todas las imágenes</b>Los cuadros y sus fichas</div><p class="museo">The Metropolitan Museum of Art, Nueva York (06.289) · óleo sobre lienzo, c. 93 × 68 cm</p><p class="gancho">Firmado «D. Sebastián Martínez por su amigo Goya, 1792». El único de los seis que sale de España por cuenta de la familia.</p><ul class="viaje"><li><b>1792</b><span>Cádiz, casa de Sebastián</span></li><li><b>1805</b><span>Hijuela de Catalina, 750 rs</span></li><li><b>c. 1814</b><span>Lo recompran Josefa y Fernando Casado</span></li><li><b>1828</b><span>Inventario de Casado, 1.500 rs</span></li><li><b>1888</b><span>Partición de Josefa García-Luz, 375 ptas</span></li><li><b>?-1904</b><span>Logroño, la rama riojana</span></li><li><b>1904</b><span>Salcedo e hijo, Madrid, 14.000 ptas</span></li><li><b>1905</b><span>Knoedler, Londres</span></li><li><b>1906</b><span>Metropolitan Museum, 1.700 libras, Fondo Rogers</span></li></ul><p class="mas"><a href="#as-goya">Los asientos originales &darr;</a> · <a href="../laminas/#goya">Lámina 1 y ficha oficial &rarr;</a></p></div></div>
 </section>
 
 <section class="slide" id="as-goya">
@@ -350,6 +359,25 @@ nav a{color:var(--accent)}
   </ul>
   <p class="note">Elaboración propia a partir de las transcripciones de los inventarios. Para estructurar los datos, cruzar los inventarios y preparar estas páginas se ha utilizado Claude (Anthropic), bajo la dirección de los autores. Las ideas centrales, la interpretación y las conclusiones son de los autores. [?] = a verificar.</p>
   <p><a href="resultados.html">Resultados en una página</a> · <a href="../">Volver al inicio</a></p>
+</section>
+
+<section class="slide" id="llevatela">
+  <p class="eyebrow">Gracias · De Cádiz a Nueva York</p>
+  <h2>Llévese la presentación</h2>
+  <div class="cierre">
+    <div class="qrbox"><img src="qr/QR_presentacion_solo.png" alt="Código QR para descargar la presentación"><b>Presentación en PDF</b>jjr2025.github.io/De_Cadiz_a_Nueva_York/presentacion.pdf</div>
+    <div>
+      <ol>
+        <li>Abra la cámara del móvil y apunte al código, sin necesidad de ninguna aplicación.</li>
+        <li>Toque el enlace que aparece en la pantalla: se abre el PDF de la presentación, que puede guardar.</li>
+        <li>La versión interactiva, con los siete inventarios, los asientos originales y las láminas, está en <a href="../">jjr2025.github.io/De_Cadiz_a_Nueva_York</a>.</li>
+      </ol>
+      <p class="creditos"><b>Lesley Crewdson y José Juan Ruiz.</b> Conferencia «De Cádiz a Nueva York», Aula Magna de la Universidad de Cádiz, con el Archivo Histórico de Protocolos de Cádiz, 18 de noviembre de 2026.<br>
+      <b>Fuentes documentales:</b> Archivo Histórico de Protocolos de Cádiz (partición de 1805, leg. 5387); Biblioteca Nacional de España (Mss/18630/40, inventario de Casado de 1828); Real Academia de Bellas Artes de San Fernando (sign. 1-36-6, avalúo de 1844); catálogo de la venta del Hôtel Drouot (1867); partición de los bienes de Josefa García-Luz (1888); acta de la Junta Delegada de Incautación y Protección del Tesoro Artístico, Tarancón (1937). Fotografías de los asientos de 1828 y 1844 del Cano: Lesley Crewdson.<br>
+      <b>Imágenes de los cuadros:</b> The Metropolitan Museum of Art (Open Access, CC0); Los Angeles County Museum of Art (dominio público); Sotheby's (Inza); Hispanic Society of America, Fundación Focus, Musée du Louvre y Templum Fine Art Auctions, que se citan con fines de docencia e investigación y se consultan en sus fichas oficiales. La versión descargable solo reproduce las imágenes de dominio público.<br>
+      <b>Uso de inteligencia artificial:</b> para estructurar y cruzar los inventarios y preparar estos materiales se ha utilizado Claude (Anthropic), bajo la dirección de los autores, que fijan las ideas, la interpretación y las conclusiones.</p>
+    </div>
+  </div>
 </section>
 
 </div>
