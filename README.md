@@ -11,7 +11,7 @@ Web: https://jjr2025.github.io/De_Cadiz_a_Nueva_York/
 | `laminas/index.html` | Una ficha por cuadro. Destino de los QR del texto. |
 | `laminas/qr/` | QR de cada lámina (PNG, 300 ppp). |
 | `laminas/img/` | Imágenes reproducidas, solo las de dominio público o autorizadas. |
-| `inventarios/index.html` | Presentación de los siete inventarios (1805-1937), con QR en `inventarios/qr/`. |
+| `inventarios/index.html` | Presentación de los ocho inventarios (1805-1937), con QR en `inventarios/qr/`. |
 | `inventarios/<año>.html` | Una página por inventario (1805, 1828, 1844, 1867, 1888, 1937) y `resultados.html`, cada una con su QR. |
 | `inventarios_qr.ipynb` | Notebook que genera las páginas de inventario y sus QR. |
 | `inventarios/img/` | Facsímiles y gráficos de la presentación. |
